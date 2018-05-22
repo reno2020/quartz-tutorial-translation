@@ -76,6 +76,6 @@ SimpleTrigger主要用于一次性执行的Job（只在某个特定的时间点�
 ## Identities
 Identities其实就是调度任务和触发器的身份标识。当Job和Trigger注册到Quartz的调度器中的时候需要定义相应的识别标记(其实就是JobKey和TriggerKey)。调度任务和触发器（JobKey和TriggerKey）的识别标记中允许使用“分组(group)”，这对于组织你的工作和触发诸如“报告工作”和“维护工作”等类别是有用的。作业或触发器的键的名称部分必须在组内是惟一的---换句话说，作业或触发器的完整键（或标识符）是名称（name）和组别（group）的复合。这里可以先这样理解，JobKey(name和group)是JobDetail的联合主键，TriggerKey(name和group)是Trigger的联合主键。
 
-你现在对调度任务和触发器有了大致的了解，你可以在[第三章]()和[第四章]()了解到更多关于它们的使用方式。
+你现在对调度任务和触发器有了大致的了解，你可以在[第三章：Job和JobDetail的更多细节](tutorials/lesson-3.md)和[第四章：关于Trigger的更多细节](tutorials/lesson-4.md)了解到更多关于它们的使用方式。
 
 原文链接：http://www.quartz-scheduler.org/documentation/quartz-2.2.x/tutorials/tutorial-lesson-02.html
