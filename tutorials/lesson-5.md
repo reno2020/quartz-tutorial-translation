@@ -74,7 +74,7 @@ import static org.quartz.DateBuilder.*:
 TriggerBuilder(以及Quartz的其它builder)会为那些没有被显式设置的属性选择合理的默认值。比如：如果你没有调用withIdentity(..)方法，TriggerBuilder会为Trigger生成一个随机的名称；如果没有调用startAt(..)方法，则默认使用当前时间，即Trigger立即生效。
 ```
 ## SimpleTrigger Misfire策略
-SimpleTrigger有几个misfire相关的策略，告诉quartz当misfire发生的时候应该如何处理。(Misfire策略的介绍可以参考[第四章：关于Trigger的更多细节](tutorials/lesson-4.md))。这些策略以常量的形式在SimpleTrigger中定义(JavaDoc中介绍了它们的功能)。这些策略包括：
+SimpleTrigger有几个misfire相关的策略，告诉quartz当misfire发生的时候应该如何处理。(Misfire策略的介绍可以参考[第四章：关于Trigger的更多细节](lesson-4.md))。这些策略以常量的形式在SimpleTrigger中定义(JavaDoc中介绍了它们的功能)。这些策略包括：
 
 **SimpleTrigger的Misfire策略常量：**
 ```

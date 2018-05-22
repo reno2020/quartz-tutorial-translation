@@ -12,7 +12,7 @@ Quartz在能够正常运作之前，下面的几个核心组件必须配置好�
 
 ThreadPool接口在org.quartz.spi包中定义，你可以按照你喜欢的方式创建ThreadPool实现。Quartz带有一个名为org.quartz.simpl.SimpleThreadPool（虽然简单，但非常令人满意）的线程池。这个ThreadPool只是在它的线程池中维护一个固定的线程集 - 永远不会增长，永远不会缩小。但是它是非常强大的，并经过很好的测试 - 几乎所有使用Quartz的人都使用这个池。
 
-JobStores和DataSource在本教程的[第九章：JobStores](tutorials/lesson-9.md)讨论过。值得注意的是，所有JobStore都实现了org.quartz.spi.JobStore接口 - 任何一个JobStore实现都不符合你的需求，那么你可以自己创建并且自行实现org.quartz.spi.JobStore接口。
+JobStores和DataSource在本教程的[第九章：JobStores](lesson-9.md)讨论过。值得注意的是，所有JobStore都实现了org.quartz.spi.JobStore接口 - 任何一个JobStore实现都不符合你的需求，那么你可以自己创建并且自行实现org.quartz.spi.JobStore接口。
 
 最后，你需要创建你的Scheduler实例。Scheduler本身需要被赋予一个名字，告诉其RMI设置，并且设置JobStore和ThreadPool的实例。RMI设置包括调度程序是否应将自身创建为RMI的服务器对象（使其可用于远程连接），要使用的主机和端口等。StdSchedulerFactory（下面将讨论）还可以创建Scheduler实例，这些Scheduler实例可以是创建在远程程序中的Scheduler的代理(RMI存根)。
 

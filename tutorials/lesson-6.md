@@ -106,7 +106,7 @@ import static org.quartz.DateBuilder.*:
 ```
 
 ## CronTrigger Misfire说明
-以下错过触发配置可以用于通知Quartz当CronTrigger发生错失触发时应该做什么。（Misfire策略的介绍可以参考[第四章：关于Trigger的更多细节](tutorials/lesson-4.md)）。这些策略以常量的形式在CronTrigger接口中定义（常量上包括描述其行为的JavaDoc）。这些常量包括：
+以下错过触发配置可以用于通知Quartz当CronTrigger发生错失触发时应该做什么。（Misfire策略的介绍可以参考[第四章：关于Trigger的更多细节](lesson-4.md)）。这些策略以常量的形式在CronTrigger接口中定义（常量上包括描述其行为的JavaDoc）。这些常量包括：
 ```java
 MISFIRE_INSTRUCTION_IGNORE_MISFIRE_POLICY
 MISFIRE_INSTRUCTION_DO_NOTHING
